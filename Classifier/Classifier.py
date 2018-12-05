@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from pip._internal import main as pip
 import importlib
 
