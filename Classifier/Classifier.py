@@ -18,6 +18,7 @@ data = pandas.read_csv(path, delimiter=",")
 X = data.values[::, 1:14]
 y = data.values[::, 0:1]
 
+pip(['install', '--user', 'scikit-learn'])
 sklearn = import_with_auto_install('sklearn.model_selection')
 X_train, X_test, y_train, y_test = sklearn.train_test_split(X, y, test_size=0.1)
 test = data.values[-1:, 1:14] # Вариант для проверки, последняя строка из датасета
