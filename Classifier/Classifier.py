@@ -7,7 +7,7 @@ def import_with_auto_install(package):
     try:
         return importlib.import_module(package)
     except ImportError:
-        pip(['install', package])
+        pip(['install --user', package])
     return importlib.import_module(package)
 
 np = import_with_auto_install('numpy')
