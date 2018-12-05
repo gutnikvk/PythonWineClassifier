@@ -12,7 +12,8 @@ def import_with_auto_install(package):
 np = import_with_auto_install('numpy')
 pandas = import_with_auto_install('pandas')
 
-path = "D:\Projects\Python\Classifier\datasets\wine.csv"
+#path = "D:\Projects\Python\Classifier\datasets\wine.csv"
+path = "..\datasets\wine.csv"
 data = pandas.read_csv(path, delimiter=",")
 X = data.values[::, 1:14]
 y = data.values[::, 0:1]
