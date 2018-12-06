@@ -34,7 +34,7 @@ clf.fit(X_train, y_train)
 print(clf.score(X_test, y_test))
 print(clf.predict(test))
 
-mtpl = import_with_auto_install('matplotlib')
+pip(['install', 'user', 'matplotlib'])
 
 from sklearn.preprocessing import scale
 X_train_draw = scale(X_train[::, 0:2])
