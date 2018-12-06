@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from pip3._internal import main as pip
+from pip._internal import main as pip
 import importlib
 
 
